@@ -1,5 +1,5 @@
 #!/bin/bash
-/anaconda/bin/conda update -n base -c defaults conda
+/anaconda/bin/conda update -y -n base -c defaults conda
 /anaconda/bin/conda create -y -n fastai python=3.6
 source /anaconda/bin/activate fastai
 pip install dataclasses
