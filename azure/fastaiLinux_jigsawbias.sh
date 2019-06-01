@@ -1,10 +1,11 @@
 #!/bin/bash
+/anaconda/bin/conda update -n base -c defaults conda
 /anaconda/bin/conda create -y -n fastai python=3.6
 source /anaconda/bin/activate fastai
 pip install dataclasses
 /anaconda/bin/conda install  -y -c pytorch pytorch torchvision cudatoolkit=10.0
 /anaconda/bin/conda install  -y -c fastai fastai
-/anaconda/bin/conda install  -y ipykernel nbconvert ipywidgets
+/anaconda/bin/conda install  -y ipykernel nbconvert ipywidgets scikit-learn
 python -m ipykernel install --name 'fastai' --display-name 'Python (fastai)'
 # Script to update Notbook metadata
 cat << EOF > /tmp/changenbmeta.py
