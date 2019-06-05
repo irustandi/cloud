@@ -43,6 +43,8 @@ for filename in /home/*; do
 done
 
 pip install pytorch-pretrained-bert
+pip install allennlp
+
 mkdir -p /etc/skel/apex
 cd /etc/skel/apex
 git clone https://github.com/NVIDIA/apex
